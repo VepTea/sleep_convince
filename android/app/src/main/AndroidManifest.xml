@@ -2,7 +2,7 @@
     <!-- Screen state permission -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <application
-        android:label="sleep_convince"
+        android:label="자자"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
