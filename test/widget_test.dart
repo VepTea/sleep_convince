@@ -11,20 +11,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:sleep_convince/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Sleep tracker app smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify that the app loads correctly
+    expect(find.text('초간단 Sleep MVP'), findsOneWidget);
+    expect(find.text('아직 수면 기록 없음'), findsOneWidget);
   });
 }

@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Screen state permission -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <application
         android:label="sleep_convince"
         android:name="${applicationName}"
